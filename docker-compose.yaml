@@ -1,0 +1,10 @@
+services:
+  mysql:
+    image: "mysql"
+    environment:
+      MYSQL_DATABASE: "opendkp"
+      MYSQL_USER: "opendkp"
+      MYSQL_PASSWORD: "opendkp"
+      MYSQL_ROOT_PASSWORD: "opendkp"
+    ports:
+      - "3306:3306"
